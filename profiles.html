@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Socially, a simple social media site and a course work assignment">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="profiles.css">
+    <title>Index</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Socially</h1>
+            <i class="fa-solid fa-bars" id="menu-open"></i>
+            <i class="fa-solid fa-xmark" id="menu-close"></i>
+            <ul>
+                <li><a href="index.html">Add Profile</a></li>
+                <li><a href="profiles.html">View Profiles <span id="number"></span></a></li>
+            </ul>
+        </div>
+        <ul id="mobile-menu">
+            <li><a href="index.html">Add Profile</a></li>
+            <li><a href="profiles.html">View Profiles</a></li>
+        </ul>
+        <div class="alert-container">
+            <div class="alert alert-info">
+                <h2>There are no profiles,
+                    <a href="index.html">Add profile</a>
+                </h2>
+                <i class="fa-solid fa-xmark" id="alert-close"></i>
+            </div>
+
+        </div>
+
+        <div class="profiles">
+
+        </div>
+
+    </div>
+</body>
+<script src="menu.js"></script>
+<script src="viewProfile.js"></script>
+<script src="https://kit.fontawesome.com/580fe222e0.js" crossorigin="anonymous"></script>
+
+</html>

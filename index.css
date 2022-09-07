@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #E8F9FD;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+button {
+    padding: 6px;
+    margin: 6px;
+    border: none;
+    background-color: #25316D;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    transform: scale(.95);
+}
+
+/* 25316D */
+.container {
+    max-width: 900px;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+li {
+    list-style-type: none;
+    padding: 6px;
+    margin: 6px;
+}
+
+.header ul li:hover {
+    background-color: #5F6F94;
+}
+
+.header {
+    background-color: #25316D;
+    color: white;
+    padding: 12px;
+}
+
+/* holds the current number of profiles  */
+.badge {
+    padding: 6px;
+    margin: 6px;
+    border-radius: 15px;
+    background-color: white;
+    color: #25316D;
+    font-weight: bold;
+}
+
+.alert-container {
+    display: none;
+}
+
+.alert {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin: 12px;
+    color: white;
+}
+
+.alert #alert-close {
+    font-size: 30px;
+}
+
+.alert-success {
+    background-color: #1C6758;
+}
+
+.alert-info {
+    background-color: #D07000;
+}
+
+.profile-form {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    padding: 12px;
+    margin: 12px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+    margin: 6px;
+}
+
+input,
+textarea {
+    margin: 6px;
+    padding: 6px;
+    border: 1px solid #25316D;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width:769px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #menu-open,
+    #menu-close {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #mobile-menu {
+        display: none;
+    }
+
+    .profile-form {
+        /* border: 1px solid #25316D; */
+    }
+}
+
+@media screen and (max-width:768px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #menu-open,
+    #menu-close {
+        font-size: 30px;
+    }
+
+    #menu-close {
+        display: none;
+    }
+
+    .header ul {
+        display: none;
+    }
+
+    #mobile-menu {
+        background-color: #25316D;
+        color: white;
+        padding: 12px;
+        display: none;
+    }
+}
