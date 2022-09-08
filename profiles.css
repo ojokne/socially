@@ -1,0 +1,30 @@
+.profiles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-container {
+    /* background-color: #25316D; */
+    padding: 6px;
+    margin: 6px;
+    border: 1px solid;
+
+}
+
+.profile-group span {
+    padding: 3px;
+    margin: 3px;
+}
+
+.alert a {
+    color: #25316D;
+    ;
+}
