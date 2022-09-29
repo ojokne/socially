@@ -9,19 +9,28 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
 }
 
 .profile-container {
     /* background-color: #25316D; */
     padding: 6px;
     margin: 6px;
-    border: 1px solid;
+    /* border: 1px solid; */
+    width: 100%;
 
 }
 
 .profile-group span {
     padding: 3px;
     margin: 3px;
+}
+
+.heading {
+    /* for span heading */
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .alert a {

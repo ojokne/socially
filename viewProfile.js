@@ -23,6 +23,12 @@ for (let i = 1; i <= localStorage.length; i++) {
     universitySpan.textContent = 'University'
     hobbiesSpan.textContent = 'Hobbies'
 
+    statementSpan.classList.add('heading')
+    primarySpan.classList.add('heading')
+    secondarySpan.classList.add('heading')
+    universitySpan.classList.add('heading')
+    hobbiesSpan.classList.add('heading')
+
     const profile = JSON.parse(localStorage[i])
     const statement = profile.statement
     const primary = profile.primary
@@ -60,6 +66,9 @@ for (let i = 1; i <= localStorage.length; i++) {
     const updateBtn = document.createElement('button')
     const updateBtnText = document.createTextNode('Update')
     updateBtn.appendChild(updateBtnText)
+    updateBtn.addEventListener('click', (e) => {
+        console.log(e.target)
+    })
 
     const divButton = document.createElement('div')
 
@@ -122,4 +131,8 @@ function deleteProfile(e) {
     const profile = document.querySelector(`#div${e.target.id}`)
     profileDiv.removeChild(profile)
     localStorage.removeItem(`${e.target.id}`)
+}
+
+function updateProfile(e) {
+
 }
